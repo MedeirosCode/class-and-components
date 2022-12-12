@@ -1,36 +1,35 @@
 import React, { Component } from "react";
 
-class Empresa extends Component {
+class Company extends Component {
   render() {
     return (
       <div>
-        <EmpresaSobre
+        <CompanyAbout
           username={this.props.username}
           cnpj={this.props.cnpj}
           saldo={this.props.saldo}
           telefone={this.props.telefone}
           email={this.props.email}
         />
-        <EmpresaSobre />
+        <CompanyAbout />
       </div>
     );
   }
 }
 
-class EmpresaSobre extends Component {
+class CompanyAbout extends Component {
   render() {
     return (
       <div>
-        <h1>Olá {this.props.username} </h1>
+        <h1>Hello {this.props.username} </h1>
         <h2>
-          seu cpnj é : {this.props.cpnj} <br /> seu saldo é : {this.props.saldo}
+          Your cpnj and : {this.props.cpnj} <br /> your balance and : {this.props.balance}
         </h2>
         <h3>
-          Renda mensal Empresa: {this.props.rendaMensal} <br /> Dono da empresa
-          : {this.props.ceoEmpresa}
+        Monthly balance Company: {this.props.monthlyBalance} <br /> Ceo of Company: {this.props.ceoCompany}
         </h3>
         <h3>
-          Telefone : {this.props.telefone} <br /> Email : {this.props.email}
+          telephone : {this.props.telephone} <br /> Email : {this.props.email}
         </h3>
       </div>
     );
@@ -40,24 +39,24 @@ class EmpresaSobre extends Component {
 function App() {
   return (
     <div>
-      <EmpresaSobre
+      <CompanyAbout
         username="Bank Mj"
-        cpnj="000.000.000.0001"
-        saldo="$1,000,000"
-        rendaMensal="$250,000"
-        ceoEmpresa="Christian medeiros"
-        telefone="3333-4444"
-        email="brankMj@redemedeiros.com"
+        cpnj="00.000.000/0001-22"
+        balance="$1,000,000"
+        monthlyBalance="$250,000"
+        ceoCompany="Christian medeiros"
+        telephone="3333-4444"
+        email="brankMj@networkmj.com"
       />
 
-      <EmpresaSobre
+      <CompanyAbout
         username="Library Mj"
-        cpnj="000.000.000.0002"
-        saldo="$2,000,000"
-        rendaMensal="$150,000"
-        ceoEmpresa="Maria eduarda"
-        telefone="5555-5555"
-        email="libraryMj@redemedeiros.com"
+        cpnj="00.000.000/0001-33"
+        balance="$2,000,000"
+        monthlyBalance="$150,000"
+        ceoCompany="Maria eduarda"
+        telephone="5555-5555"
+        email="libraryMj@networkmj.com"
       />
     </div>
   );
