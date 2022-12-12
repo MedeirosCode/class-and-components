@@ -41,5 +41,6 @@ Durante o desenvolvimento, foi ensinado sobre o uso do `Class` e `components`.
 [✅] Utilizar Components<br/>
 
 ---
+![image](https://user-images.githubusercontent.com/90536013/206940236-fec8f8c3-91f4-4619-9f7e-82bf4b4f0b10.png)
 
 <h3 align="center"> Desenvolvido em um curso online. </h3>
